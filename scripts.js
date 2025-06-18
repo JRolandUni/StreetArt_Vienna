@@ -10,11 +10,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-L.marker(viennaCoords)
-  .addTo(map)
-  .bindPopup('<b>Vienna</b><br>Capital of austria')
-  .openPopup();
-
 // Read markers data from data.csv
   $.get('./data.csv', function(csvString) {
 
@@ -46,11 +41,3 @@ L.marker(viennaCoords)
     }
     
   });
-
-
-
-
-
-/*   'ID: ' + String(row.id) + 
-        '<br>address: ' + row.address +
-        '<br>municipal: ' + row.municipal); */
