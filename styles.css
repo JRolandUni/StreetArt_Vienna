@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+#map {
+  height: 80vh;
+  width: 90vw;
+  margin: 0 auto;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
