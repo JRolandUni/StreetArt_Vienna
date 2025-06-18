@@ -12,7 +12,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.marker(viennaCoords)
   .addTo(map)
-  .bindPopup('<b>Vienna</b><br>Capital of shit')
+  .bindPopup('<b>Vienna</b><br>Capital of austria')
   .openPopup();
 
 // Read markers data from data.csv
@@ -23,13 +23,34 @@ L.marker(viennaCoords)
 
     // For each row in data, create a marker and add it to the map
     // For each row, columns `Latitude`, `Longitude`, and `Title` are required
-    for (var i in data) {
-      var row = data[i];  
-      var marker = L.marker([row.lat, row.lon], {
-        opacity: 1
-      }).bindPopup(row.id);
+
+    for (let row of data) {
+      if (!row.lat || !row.lon) continue;
+        var marker = L.marker([row.lat, row.lon], {
+          opacity: 1,
+          icon: L.icon({
+    iconUrl: 'icon.png',
+    iconSize: [8,8]
+  })
+      }).bindPopup(
+          `
+  <div style="min-width:150px">
+    <strong>ID:</strong> ${row.id}<br>
+    <strong>Address:</strong> ${row.address}<br>
+    <strong>Municipal:</strong> ${row.municipal}<br>
+    <img src="img/${String(row.id).padStart(3,"0")}.jpg" alt="image" style="width:100%; margin-top: 5px;" />
+  </div>
+  `)
       
       marker.addTo(map);
     }
-
+    
   });
+
+
+
+
+
+/*   'ID: ' + String(row.id) + 
+        '<br>address: ' + row.address +
+        '<br>municipal: ' + row.municipal); */
