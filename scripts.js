@@ -12,7 +12,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.marker(viennaCoords)
   .addTo(map)
-  .bindPopup('<b>Vienna</b><br>Capital of Austria')
+  .bindPopup('<b>Vienna</b><br>Capital of shit')
   .openPopup();
 
 // Read markers data from data.csv
