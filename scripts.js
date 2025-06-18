@@ -25,12 +25,12 @@ L.marker(viennaCoords)
     // For each row, columns `Latitude`, `Longitude`, and `Title` are required
     for (var i in data) {
       var row = data[i];
-      console.log(row.lat)  
-      var marker = L.marker([row.lat, row.lon], {
-        opacity: 1
-      }).bindPopup(row.Title);
+      console.log(row.lat);  
+      //var marker = L.marker([row.lat, row.lon], {
+        //opacity: 1
+      //}).bindPopup(row.Title);
       
-      marker.addTo(map);
+      //marker.addTo(map);
     }
 
   });
