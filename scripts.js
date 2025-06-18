@@ -26,7 +26,7 @@ L.marker(viennaCoords)
     for (var i in data) {
       var row = data[i];
 
-      var marker = L.marker([row.Latitude, row.Longitude], {
+      var marker = L.marker([row.lat, row.lon], {
         opacity: 1
       }).bindPopup(row.Title);
       
