@@ -33,6 +33,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     <strong>ID:</strong> ${row.id}<br>
     <strong>Address:</strong> ${row.address}<br>
     <strong>Municipal:</strong> ${row.municipal}<br>
+    <strong>Photo taken:</strong> ${row.Date_Time}<br>
     <img src="img/${String(row.id).padStart(3,"0")}.jpg" alt="image" style="width:100%; margin-top: 5px;" />
   </div>
   `)
