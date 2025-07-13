@@ -11,3 +11,5 @@ This project was realized during a course of the Department for Cartography and 
 There is a great wealth of art on house walls in Vienna, that is beautiful and freely availiable for everyone to look at. To highlight, document and archive these works this database was created. <br>
 The pictures where provided by the Museum des Heraufschauens (https://www.raufschaumuseum.at/) or taken by Jakob and Eva and then georeferenced. For further information, please refer to StreetArtVienna_Presentation.pdf <br><br>
 
+# <a href="https://jrolanduni.github.io/StreetArt_Vienna/index.html">Click me to look at the map!</a>
+
