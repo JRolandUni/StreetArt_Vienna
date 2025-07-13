@@ -4,7 +4,7 @@ https://github.com/HandsOnDataViz/leaflet-map-csv
 # Street Art Vienna
 
 ### A project by Eva Gautsch and Jakob Roland to archive art on city walls in Vienna
-This project was realized during a course of the Department for Cartography and Geoinformation at the University of Vienna with Profesor Dr. Krzysztof Janowicz in the sommersemester 2025
+This project was realized during a course of the Department for Cartography and Geoinformation at the University of Vienna with Profesor Dr. Krzysztof Janowicz in the summersemester 2025
 
 
 ## Project Aim
